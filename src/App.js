@@ -12,7 +12,11 @@ export default function App() {
         </header>
         <footer>
           Hosted on{" "}
-          <a href="https://jj-dictionary-app.netlify.app" target="_blank">
+          <a
+            href="https://jj-dictionary-app.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+          >
             Netlify
           </a>
         </footer>
