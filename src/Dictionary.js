@@ -4,18 +4,18 @@ import Results from "./Results";
 import "./Dictionary.css";
 
 export default function Dictionary() {
-  let [keyword, setKeyword] = useState("");
   let [results, setResults] = useState(null);
+  let [keyword, setKeyword] = useState("");
 
   function handleResponse(response) {
     console.log(response.data.meanings[0]);
-    setResults(response.data);
+    setResults(response.data.meanings);
   }
 
   function search(event) {
     event.preventDefault();
-
-    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=f8833caao3caf01e1ffbc8t348acfb03`;
+    let apiKey = "f8833caao3caf01e1ffbc8t348acfb03";
+    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
   }
 
