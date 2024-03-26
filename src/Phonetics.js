@@ -1,11 +1,17 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMicrophoneLines } from "@fortawesome/free-solid-svg-icons";
 
 export default function Phonetics(props) {
   return (
     <div className="Phonetic">
       <a href={props.phonetic.audio} target="blank" rel="noreferrer">
-        Listen
-      </a>
+        <FontAwesomeIcon
+          icon={faMicrophoneLines}
+          size="2xl"
+          style={{ color: "#74C0FC" }}
+        />
+      </a>{" "}
       <span className="phoneticText">{props.phonetic.text}</span>
     </div>
   );
