@@ -9,7 +9,7 @@ export default function Phonetics(props) {
         <FontAwesomeIcon
           icon={faMicrophoneLines}
           size="2xl"
-          style={{ color: "#74C0FC" }}
+          style={{ color: "#fffdf6" }}
         />
       </a>{" "}
       <span className="phoneticText">{props.phonetic.text}</span>

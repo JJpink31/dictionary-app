@@ -23,10 +23,15 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <h1 className="text-center">Dictionary</h1>
+      <h1 className="text-center mt-5">Dictionary</h1>
+      <h2>What word do you want to look up? </h2>
       <form onSubmit={search}>
         <input type="search" onChange={handleKeywordChange} />
       </form>
+      <div className="hint">
+        suggested words: sunset, koloa, orchid, kismet...
+      </div>
+
       <Results results={results} />
     </div>
   );
