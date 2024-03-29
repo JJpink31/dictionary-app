@@ -1,0 +1,15 @@
+.Results {
+  font-size: 18px;
+}
+.Results h2,
+h3 {
+  font-size: 40px;
+  line-height: 2;
+  text-transform: capitalize;
+  text-decoration: 3px underline #ddd;
+}
+
+.Results strong {
+  font-size: 20px;
+  text-decoration: underline;
+}

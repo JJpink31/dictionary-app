@@ -4,7 +4,7 @@ import { faMicrophoneLines } from "@fortawesome/free-solid-svg-icons";
 
 export default function Phonetics(props) {
   return (
-    <div className="Phonetic">
+    <div className="Phonetic mb-3">
       <a href={props.phonetic.audio} target="blank" rel="noreferrer">
         <FontAwesomeIcon
           icon={faMicrophoneLines}
