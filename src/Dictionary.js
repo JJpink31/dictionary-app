@@ -36,6 +36,7 @@ export default function Dictionary() {
     <div className="Dictionary">
       <img
         src="https://png.pngtree.com/png-vector/20230318/ourmid/pngtree-book-clipart-vector-png-image_6653535.png"
+        alt="Dictonary Clipart"
         width={150}
         className="introImg"
       />
