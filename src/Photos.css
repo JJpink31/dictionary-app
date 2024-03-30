@@ -1,4 +1,9 @@
 .Photos img {
   border-radius: 10px;
   margin-bottom: 20px;
+  transition: all 150ms ease-in-out;
+}
+
+.Photos .img-fluid:hover {
+  transform: scale(1.7);
 }
