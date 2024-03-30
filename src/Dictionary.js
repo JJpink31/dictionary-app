@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import "./Dictionary.css";
-import Typewriter from "typewriter-effect";
 
 export default function Dictionary() {
   let [results, setResults] = useState(null);
@@ -11,20 +10,11 @@ export default function Dictionary() {
   function handleResponse(response) {
     setResults(response.data[0]);
   }
-  function getDefintion(response) {
-    new Typewriter(".results", {
-      strings: response.data,
-      autoStart: true,
-      delay: 1,
-      cursor: "",
-    });
-  }
 
   function search(event) {
     event.preventDefault();
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
-    axios.get(apiUrl).then(getDefintion);
   }
 
   function handleKeywordChange(event) {

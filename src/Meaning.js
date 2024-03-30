@@ -1,6 +1,8 @@
 import React from "react";
 import Synonyms from "./Synonyms";
 import "./Example.css";
+import Typewriter from "typewriter-effect";
+
 export default function Meaning(props) {
   return (
     <div className="Meaning">
@@ -9,11 +11,30 @@ export default function Meaning(props) {
         return (
           <div key={index}>
             <div className="definition mb-3">
-              <strong>Definition:</strong> {definition.definition}
+              <strong>Definition:</strong>{" "}
+              <Typewriter
+                options={{
+                  strings: [definition.definition],
+                  autoStart: true,
+                  delay: 85,
+                  deleteSpeed: 100000,
+                  loop: false,
+                  cursor: "",
+                }}
+              />
             </div>
             <div className="example mb-3">
               <em>
-                <strong>Example:</strong> {definition.example}
+                <strong>Example:</strong>
+                <Typewriter
+                  options={{
+                    strings: [definition.example],
+                    autoStart: true,
+                    delay: 85,
+                    deleteSpeed: 100000,
+                    cursor: "",
+                  }}
+                />
               </em>
             </div>
             <Synonyms synonyms={props.meaning.synonyms} />

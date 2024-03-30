@@ -6,12 +6,11 @@ export default function Synonyms(props) {
     return (
       <div>
         <strong>Synonyms:</strong>
-        <ul className="Synonyms mb3">
+        <ul className="Synonyms">
           {props.synonyms.slice(0, 5).map(function (synonyms, index) {
             return (
               <li
-                className="me-3 mb-3 text-center
-                
+                className="me-3 mb-3 mt-2
               "
                 key={index}
               >
