@@ -17,7 +17,7 @@ export default function Meaning(props) {
                   strings: [definition.definition],
                   autoStart: true,
                   delay: 85,
-                  deleteSpeed: 100000,
+                  deleteSpeed: 1000000,
                   loop: false,
                   cursor: "",
                 }}
@@ -31,7 +31,7 @@ export default function Meaning(props) {
                     strings: [definition.example],
                     autoStart: true,
                     delay: 85,
-                    deleteSpeed: 100000,
+                    deleteSpeed: 1000000,
                     cursor: "",
                   }}
                 />

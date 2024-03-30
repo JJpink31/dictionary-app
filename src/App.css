@@ -6,3 +6,13 @@ body {
   margin: 0 auto;
   font-family: "Courier Prime", monospace;
 }
+footer {
+  color: #c4c4c463;
+  font-size: 14px;
+  margin-bottom: 30px;
+  padding-right: 14px;
+}
+footer a {
+  color: #eae1ce8b;
+  text-decoration: none;
+}
