@@ -2,12 +2,6 @@
   border-radius: 10px;
   margin-bottom: 20px;
   transition: all 150ms ease-in-out;
-  opacity: 0;
-  transition: opacity 30s;
-}
-
-.Photos img {
-  opacity: 1;
 }
 
 .Photos .img-fluid:hover {
